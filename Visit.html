@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Hochreiter | CNC-Facharbeiter & Metalltechniker</title>
+    <meta name="description" content="Offizielle digitale Visitenkarte von Christopher Hochreiter – CNC-Facharbeiter, Werkzeugbautechniker und Zerspanungstechniker aus St. Pölten.">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --card-border: #1f2937;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #38bdf8;
+            --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            width: 100%;
+            max-width: 500px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 35px 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--accent-gradient);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+            color: #ffffff;
+        }
+        .title {
+            color: var(--accent);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .statement {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+        .contact-list {
+            list-style: none;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            padding: 12px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.92rem;
+        }
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+        .contact-item span.label {
+            color: var(--text-muted);
+            width: 90px;
+            flex-shrink: 0;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .contact-item a, .contact-item div.val {
+            color: var(--text-main);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .contact-item a:hover {
+            color: var(--accent);
+        }
+        .skills-section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        .actions {
+            margin-top: 30px;
+            display: flex;
+            gap: 12px;
+        }
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <h1 class="name">Christopher Hochreiter</h1>
+            <div class="title">CNC-Facharbeiter & Werkzeugbautechniker</div>
+            <p class="statement">Präzision, handwerkliches Geschick und langjährige Praxiserfahrung in der modernen Zerspanung und Metallverarbeitung.</p>
+        </div>
+
+        <ul class="contact-list">
+            <li class="contact-item">
+                <span class="label">Standort</span>
+                <div class="val">St. Pölten, Österreich</div>
+            </li>
+            <li class="contact-item">
+                <span class="label">Telefon</span>
+                <a href="tel:+4368181574160">+43 681 815 741 60</a>
+            </li>
+            <li class="contact-item">
+                <span class="label">E-Mail</span>
+                <a href="mailto:christopher.mathias.hochreiter@gmail.com">christopher.mathias.hochreiter@gmail.com</a>
+            </li>
+        </ul>
+
+        <div class="skills-section">
+            <div class="section-title">Kernkompetenzen</div>
+            <div class="tags">
+                <span class="tag">CNC-Fräsen & Drehen</span>
+                <span class="tag">Siemens Shopturn / ISO</span>
+                <span class="tag">Heidenhain TNC 640</span>
+                <span class="tag">Hexagon Esprit / CAD/CAM</span>
+                <span class="tag">Qualitätssicherung</span>
+                <span class="tag">SAP & MS Office</span>
+            </div>
+        </div>
+
+        <div class="actions">
+            <a href="mailto:christopher.mathias.hochreiter@gmail.com" class="btn btn-primary">Kontakt aufnehmen</a>
+        </div>
+    </div>
+
+</body>
+</html>
